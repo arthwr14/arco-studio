@@ -1,7 +1,7 @@
 ﻿# Publica este site no GitHub Pages.
 # Uso: .\publicar.ps1 [-Repo arco-studio]
 param([string]$Repo = "arco-studio")
-$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Continue"  # erros de comandos nativos são checados por $LASTEXITCODE
 Set-Location $PSScriptRoot
 
 # Ferramentas instaladas em %LOCALAPPDATA%\Programs (caso o PATH ainda não tenha sido recarregado)
